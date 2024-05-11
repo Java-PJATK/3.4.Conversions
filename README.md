@@ -36,6 +36,8 @@ int a = (int)x; // now OK
 ```
 Of course, after conversion, a will be exactly 7, as there is no way for an `int` to have a fractional part.
 
+[Contents](https://github.com/Java-PJATK/00.Contents)
+
 Note also that this conversion does _not_ affect the variable x as such: its type is still `double` and its value is still 7.7.
 
 The exact rules of conversions are more complicated, but general principle is that conversions from “narrow” types to “wider” are performed implicitly (`byte`, `char`, `short`→`int`, `int`,`float`,`long`→`double`, etc.), while conversions in the opposite direction must be explicit.
